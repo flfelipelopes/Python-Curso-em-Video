@@ -1,0 +1,16 @@
+''' This is the even_detector.py module, and it provides the function called is_even()
+    which will print that whether the num you have given is an even number.'''
+def is_even(num):
+    '''(int) -> bool
+    Return whether num is even.
+
+    >>> is_even(4)
+    True
+    >>> is_even(77)
+    False
+    '''
+    return num % 2 == 0
+##    if num % 2 == 0:
+##          return True
+##     else:
+##          return Flase

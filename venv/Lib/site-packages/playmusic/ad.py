@@ -1,0 +1,2 @@
+import playmusic
+playmusic.ad()

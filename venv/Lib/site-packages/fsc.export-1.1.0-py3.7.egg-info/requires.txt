@@ -1,0 +1,10 @@
+
+[:python_version < "3"]
+fsc
+
+[doc]
+sphinx
+sphinx_rtd_theme
+
+[test]
+pytest

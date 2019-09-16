@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: fsc.formatting
+Version: 1.0.0
+Summary: This modules offers convenient string formating operations.
+
+Home-page: http://frescolinogroup.github.io/frescolino/pyformatting/1.0
+Author: C. Frescolino
+Author-email: frescolino@lists.phys.ethz.ch
+License: Apache
+Description: This module contains functions for nicely formatting strings. Current functionalities include shortening a string to a certain size and drawing a box around a string.
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License

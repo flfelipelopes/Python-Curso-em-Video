@@ -1,0 +1,3 @@
+[console_scripts]
+rolabesti = rolabesti.__main__:main
+
