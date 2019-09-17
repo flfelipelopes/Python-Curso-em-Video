@@ -35,5 +35,4 @@ else:
           'através do número 0800-777-9999.')
 print('')
 print('Obrigado por contar com a {}CREDIFACIL{}'.format('\033[1;32m', '\033[m'))
-
-
+#end
