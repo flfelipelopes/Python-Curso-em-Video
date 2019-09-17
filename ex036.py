@@ -18,7 +18,7 @@ parcela = int(anos * 12)
 prestacao = (casa / parcela)
 
 print('O valor da prestação em {} {} {} parcelas será de '
-      'R$ {} {:.3f} {}.'.format('\033[1m', parcela, '\033[m', '\033[1m', prestacao, '\033[m'))
+      'R$ {} {:.2f} {}.'.format('\033[1m', parcela, '\033[m', '\033[1m', prestacao, '\033[m'))
 
 print('')
 
