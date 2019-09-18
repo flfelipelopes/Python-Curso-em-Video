@@ -15,4 +15,4 @@ elif n2 < n1:
     maior = n1
     print('O maior valor é {}'.format(maior))
 else:
-    print('Não há maior. Os ambos os números são iguais!')
+    print('Não há maior. Ambos os números são iguais!')
