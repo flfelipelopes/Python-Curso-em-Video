@@ -2,7 +2,6 @@
 #Perguntar: valor da casa, salário, quantos anos para pagar.
 #Calcule: valor da prestação
 #Mostre: negado ou aprovado. Será negado, se prestação for maior que 30% do salário.
-from math import ceil
 
 print('=' * 10, 'CREDIFACIL: SISTEMA DE EMPRÉSTIMOS', '=' * 10)
 print('')
@@ -14,18 +13,17 @@ casa = float(input('Qual o valor da casa que deseja comprar? R$ '))
 salario = float(input('Qual o valor da sua renda mensal? R$ '))
 anos = int(input('Em quantos anos você deseja quitar o seu financiamento? '))
 
-parcela = int(anos * 12)
+parcela = (anos * 12)
 prestacao = (casa / parcela)
+minimo = salario * 30 / 100
 
 print('O valor da prestação em {} {} {} parcelas será de '
-      'R$ {} {:.2f} {}.'.format('\033[1m', parcela, '\033[m', '\033[1m', prestacao, '\033[m'))
-
+      'R$ {} {:.2f} {}.'.format('\033[1m', parcela, '\033[m', '\033[1m', prestacao, '\033[m'), end='')
 print('')
-
-if parcela <= (salario * 0.30):
-    print('Parabéns! O seu empréstimo já está {}PRÉ-APROVADO{}.'
+if prestacao <= minimo:
+    print('Parabéns! O seu empréstimo já está {}PRÉ-APROVADO{}.\n'
           'Clique em CONTINUAR para os próximos passos.'.format('\033[1;32m', '\033[m'))
-elif parcela >= (salario * 0.30):
+elif prestacao > minimo:
     print('Infelizmente, a margem de empréstimo solicitado\n'
           'não é compatível com a sua renda atual.\n'
           '{}Que tal fazermos uma solicitação menor? {}'.format('\033[1;31m', '\033[m'))
