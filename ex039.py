@@ -21,22 +21,19 @@ if idade == 18:
 elif idade < 18:
     print('Não se preocupe, você ainda não está na idade de se alistar.\n'
           'Mas, deverá fazê-lo daqui a {} anos'.format(18 - idade))
-
 elif idade > 18:
-    verificacao = input('Você já se apresentou em uma junta militar? (S/N)').lower()
+    verificacao = input('Você já se apresentou em uma junta militar? (S/N): ').lower().strip()
     print('')
     if verificacao == 's' or 'sim':
         print('Então não se preocupe. Você está em dia com a sua obrigação militar.')
-    elif verificacao != 's' or 'sim':
+    elif verificacao == 'n' or 'não' or 'nao':
         print('Você já passou da idade de se alistar e deverá fazê-lo imediatamente.\n'
               'Procure a junta militar mais próximo de sua residência.')
-
 else:
     print('Dados incorretos. Tente novamente.')
-
 print('')
 print('Obrigado por colaborar com o Exército Brasileiro. Tenha um ótimo dia!')
 
-
+#função quebrada em elif verificacao == não. debuggar.
 
 
