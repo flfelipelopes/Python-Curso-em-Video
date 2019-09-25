@@ -2,7 +2,7 @@
 #Considere seu preço normal e a condição de pagamento
 #A vista: 10% desconto; A vista cartão: 5% desconto; 2x: preço normal; 3x ou +: 20% juros
 
-print('=' * 21, 'SISTEMA DE REGISTRADORA', '=' * 21)
+print('\033[1m{:=^67}\033[m'.format(' SISTEMA DE REGISTRADORA '))
 
 print('')
 print('Insira o valor do produto e escolha qual será a forma de pagamento.')
