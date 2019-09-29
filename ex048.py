@@ -6,4 +6,3 @@ for c in range(0, 500, 3):
         soma += c
 print('A soma total de números ímpares múltiplos'
       ' de 3 entre 1 e 500 é de {}.'.format(soma))
-    
