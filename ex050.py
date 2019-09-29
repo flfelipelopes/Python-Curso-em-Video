@@ -8,5 +8,5 @@ for c in range(0, 6):
     if (n % 2) == 0:
         soma += n
         cont += 1
-print('A soma total entre os números pares é de {}{}{}'
-      .format('\033[1m', soma, '\033[m'))
+print('A soma total entre os {} números pares é de {}{}{}'
+      .format(cont, '\033[1m', soma, '\033[m'))
