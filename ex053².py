@@ -6,7 +6,7 @@ print('')
 
 palavras = frase.split()
 junto = ''.join(palavras)
-inverso = junto[::-1]
+inverso = junto[::-1]  #utilizando fatiamento
 
 print('O inverso de {} é {}'.format(frase, inverso))
 
